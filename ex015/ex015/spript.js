@@ -15,13 +15,13 @@ function verificar() {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src', 'bbmenino.png')
+                img.setAttribute('src', 'bbmenino1.png')
             } else if (idade >= 10 && idade < 21 ) {
                 //jovem
-                img.setAttribute('src', 'homemjovem.png')
+                img.setAttribute('src', 'homemjovem1.png')
             } else if ( idade < 50 ) {
                 //adulto
-                img.setAttribute('src', 'homemdulto.png')
+                img.setAttribute('src', 'homemdulto1.png')
             } else {
                 //idoso
                 img.setAttribute('src', '')
@@ -30,16 +30,16 @@ function verificar() {
             genero = 'mulher'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src', 'pexels-julianesanchezfotografia-25636752.jpg')
+                img.setAttribute('src', 'bbmenina1')
             } else if (idade >= 10 && idade < 21 ) {
                 //jovem
-                img.setAttribute('src', 'jovemenina.png')
+                img.setAttribute('src', 'menina1.png')
             } else if ( idade < 50 ) {
                 //adulto
-                img.setAttribute('src', 'adultamulher.png')
+                img.setAttribute('src', 'adultamulher1.png')
             } else {
                 //idoso
-                img.setAttribute('src', 'idosa.png')
+                img.setAttribute('src', 'idosa1.png')
             }
         } /*fsex é o nome da variável que se refere ao id dos marcadores */
         res.style.textAlign = 'center' /*posicionando o texto em js */
