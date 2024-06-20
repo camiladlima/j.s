@@ -3,25 +3,29 @@ function verificar() {
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res') 
+    
     if (fano.value.length == 0 || fano.value > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
+        var img = document.getElementById('img')
         var img = document.createElement('img')
         img.setAttribute('id', 'foto') /*foi criado uma tag img com o id foto em javascrippt, o mesmo que criar a tag em html */
         if (fsex[0].checked) /*se o que for marcado na psição 0 ou seja a primeira opção que é 'Homem' vai ser marcado como homem*/ {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src', 'bbmenino1.png')
+                
             } else if (idade >= 10 && idade < 21 ) {
                 //jovem
                 img.setAttribute('src', 'homemjovem1.png')
+                
             } else if ( idade < 50 ) {
                 //adulto
                 img.setAttribute('src', 'homemdulto1.png')
+                
             } else {
                 //idoso
                 img.setAttribute('src', '')
@@ -31,15 +35,19 @@ function verificar() {
             if (idade >= 0 && idade < 10) {
                 //criança
                 img.setAttribute('src', 'bbmenina1')
+                
             } else if (idade >= 10 && idade < 21 ) {
                 //jovem
                 img.setAttribute('src', 'menina1.png')
+                
             } else if ( idade < 50 ) {
                 //adulto
                 img.setAttribute('src', 'adultamulher1.png')
+                
             } else {
                 //idoso
                 img.setAttribute('src', 'idosa1.png')
+                
             }
         } /*fsex é o nome da variável que se refere ao id dos marcadores */
         res.style.textAlign = 'center' /*posicionando o texto em js */
