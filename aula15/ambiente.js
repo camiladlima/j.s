@@ -7,3 +7,9 @@ num.sort() // vai pegar todos os valores e colocar em ordem crescente
 console.log(num)
 console.log(`O vetor tem ${num.length} Posições`)
 console.log(`O primeiro valor do vetor  ${num[0]}`)
+let pos = num.indexOf(9)
+if(pos == -1) {
+    console.log('O valor não foi encontrado')
+} else {
+    console.log(`O valor está na posição ${pos}`)
+}
