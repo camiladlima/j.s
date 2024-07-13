@@ -19,9 +19,9 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
 }
 
-select#flista{
+#flista{
     width: 150px;
-    margin-top: 5x;
+    margin-top: 8px;
 }
 
 div{
@@ -33,4 +33,15 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+#botao{
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: rgba(173, 216, 230, 0.425);
+}
+
+#botao:hover{
+    background-color: rgba(119, 136, 153, 0.404);
 }
